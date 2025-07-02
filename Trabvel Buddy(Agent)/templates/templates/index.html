@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Buddy Assistant</title>
+
+    <!-- Dialogflow Messenger Stylesheet -->
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+
+    <!-- Custom Styles for the agent -->
+    <style>
+      df-messenger {
+        z-index: 999;
+        position: fixed;
+        --df-messenger-font-color: #000;
+        --df-messenger-font-family: Google Sans;
+        --df-messenger-chat-background: #f3f6fc;
+        --df-messenger-message-user-background: #d3e3fd;
+        --df-messenger-message-bot-background: #fff;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Travel Buddy Website!</h1>
+    <p>Have a question about your next trip? Click the chat icon in the bottom-right corner to talk to our Travel Buddy assistant.</p>
+
+    <!-- Dialogflow Messenger Script -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    
+    <!-- The Dialogflow Messenger element -->
+    <df-messenger project-id="daily-dose-of-knowledge-462017" agent-id="d1a796b1-eae6-42d4-a2e9-ff214ea2d9f5" language-code="en" max-query-length="-1">
+        <df-messenger-chat-bubble chat-title="Travel Buddy"></df-messenger-chat-bubble>
+    </df-messenger>
+</body>
+</html>
